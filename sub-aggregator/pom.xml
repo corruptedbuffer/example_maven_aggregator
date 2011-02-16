@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+   <modelVersion>4.0.0</modelVersion>
+   <groupId>my.company</groupId>
+   <artifactId>sub-aggregator</artifactId>
+   <!-- version inherited  -->
+   <packaging>pom</packaging>
+   <name>Sub Aggregator</name>
+
+   <parent>
+      <groupId>my.company</groupId>
+      <artifactId>example-aggregator</artifactId>
+      <version>1.9-SNAPSHOT</version>
+   </parent>
+   
+   <modules>
+      <module>SubProject1</module>
+      <module>SubProject2</module>
+      <module>SubProject3</module>
+      <module>SubProject4</module>
+   </modules>
+   
+   <description>This is the Sub Aggregator
+   </description>
+
+   <dependencies>
+      <dependency>
+         <groupId>javax.xml.bind</groupId>
+         <artifactId>jaxb-api</artifactId>
+         <version>2.1</version>
+      </dependency>
+      <dependency>
+         <groupId>com.sun.xml.bind</groupId>
+         <artifactId>jaxb-impl</artifactId>
+         <version>2.1.9</version>
+      </dependency>
+   </dependencies>
+      
+</project>
