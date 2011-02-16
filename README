@@ -1,0 +1,10 @@
+This example Maven multi-module project demonstrates how Maven can fail to build a
+correct website for a multi-module project.  For some reason, there are no links generated for
+Project1 and Project2 on the main page, just bold text.
+
+To test this, you'll have to change the site to deploy to in the upper level POM, then run:
+
+mvn site-deploy
+
+My hope is someone can tell me if I'm doing something wrong here, or if it's an actual bug.
+I should point out that this happens with Maven 3 as well as Maven 2.
