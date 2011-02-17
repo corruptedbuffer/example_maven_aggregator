@@ -35,97 +35,19 @@
    <distributionManagement>
       <site>
          <id>my-site</id>
-         <url>file:///data/atmm/jetty/webapps/jedi/example-mm</url>
+         <url>file://${user.home}/example-mm</url>
       </site>
    </distributionManagement>
 
-   <repositories>
-      <repository>
-         <id>mitre-caasd</id>
-         <name>MITRE CAASD</name>
-         <url>http://dali.mitre.org/nexus/content/repositories/mitre-caasd</url>
-         <snapshots>
-            <enabled>true</enabled>
-            <updatePolicy>always</updatePolicy>
-         </snapshots>
-         <releases>
-            <enabled>true</enabled>
-         </releases>
-      </repository>
-      <repository>
-         <id>external</id>
-         <name>External</name>
-         <url>http://dali.mitre.org/nexus/content/repositories/external</url>
-         <snapshots>
-            <enabled>true</enabled>
-         </snapshots>
-         <releases>
-            <enabled>true</enabled>
-         </releases>
-      </repository>
-      <repository>
-         <id>public</id>
-         <name>Nexus Public</name>
-         <url>http://dali.mitre.org/nexus/content/repositories/public</url>
-         <releases>
-            <enabled>true</enabled>
-         </releases>
-         <snapshots>
-            <enabled>false</enabled>
-         </snapshots>
-      </repository>
-      <repository>
-         <id>public-snapshots</id>
-         <name>Nexus Public Snapshots</name>
-         <url>http://dali.mitre.org/nexus/content/repositories/public-snapshots</url>
-         <releases>
-            <enabled>false</enabled>
-         </releases>
-         <snapshots>
-            <enabled>true</enabled>
-         </snapshots>
-      </repository>
-   </repositories>
-   
    <pluginRepositories>
       <pluginRepository>
          <id>apache.snapshots</id>
          <url>http://repository.apache.org/snapshots/</url>
          <releases>
-            <updatePolicy>daily</updatePolicy>
+            <updatePolicy>never</updatePolicy>
          </releases>
          <snapshots>
-            <updatePolicy>daily</updatePolicy>
-         </snapshots>
-      </pluginRepository>
-      <pluginRepository>
-         <id>mitre-caasd</id>
-         <url>http://dali.mitre.org/nexus/content/groups/mitre-caasd</url>
-         <releases>
-            <enabled>true</enabled>
-         </releases>
-         <snapshots>
-            <enabled>true</enabled>
-         </snapshots>
-      </pluginRepository>
-      <pluginRepository>
-         <id>external</id>
-         <url>http://dali.mitre.org/nexus/content/groups/external</url>
-         <releases>
-            <enabled>true</enabled>
-         </releases>
-         <snapshots>
-            <enabled>true</enabled>
-         </snapshots>
-      </pluginRepository>
-      <pluginRepository>
-         <id>public</id>
-         <url>http://dali.mitre.org/nexus/content/groups/public</url>
-         <releases>
-            <enabled>true</enabled>
-         </releases>
-         <snapshots>
-            <enabled>false</enabled>
+            <updatePolicy>never</updatePolicy>
          </snapshots>
       </pluginRepository>
    </pluginRepositories>
