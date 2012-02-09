@@ -36,13 +36,13 @@
         <snapshotRepository>
             <id>snapshots</id>
             <name>Internal Snapshots</name>
-            <url>http://colossus.homelinux.com:8080/nexus/content/repositories/snapshots</url>
+            <url>http://localhost:8080/nexus/content/repositories/snapshots</url>
             <uniqueVersion>false</uniqueVersion>
         </snapshotRepository>
         <repository>
             <id>releases</id>
             <name>Internal Releases</name>
-            <url>http://colossus.homelinux.com:8080/nexus/content/repositories/releases</url>
+            <url>http://localhost:8080/nexus/content/repositories/releases</url>
         </repository>
         <site>
             <id>my-site</id>
