@@ -27,7 +27,7 @@
     </organization>
 
     <scm>
-        <connection>git://github.com/corruptedbuffer/example_maven_aggregator.git</connection>
+        <connection>scm:git:git://github.com/corruptedbuffer/example_maven_aggregator.git</connection>
     </scm>
 
     <url>http://my.company.com/index.html</url>
