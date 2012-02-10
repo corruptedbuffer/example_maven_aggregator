@@ -296,7 +296,7 @@
                                             <date implementation="java.lang.String">${previous.release.date}</date>
                                             <date implementation="java.lang.String">${current.date}</date>
                                         </dates>
-                                        <dateFormat>yyyyMMdd-hhmm</dateFormat>
+                                        <dateFormat>yyyyMMdd-HHmm/dateFormat>
                                     </configuration>
                                 </plugin>
                                 <plugin>
